@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.min.js"></script>
+</head>
+
+<body>
+    <ul class="ul">
+        <li>1</li>
+        <li class="current">2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <div class="nav">
+        <span>我是span</span>
+        <p>我是p</p>
+        <div>
+            <p>我是小p</p>
+        </div>
+    </div>
+    <ul>
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li>ul的li</li>
+    </ul>
+    <ol>
+        <li>ol的li</li>
+        <li>ol的li</li>
+        <li>ol的li</li>
+        <li>ol的li</li>
+    </ol>
+
+    <script>
+        window.addEventListener('load', function () {
+            console.log($('.nav').parent());
+            $('ul li').css('color', 'pink');
+            $('ol li:first').css('color', 'blue');
+            $('ol li:eq(1)').css('color', 'red');
+            $('ul li:odd').css('color', 'skyblue');
+            $('.nav').children('p').css('color', 'yellow');
+            $('.nav').find('p').css('color', 'purple');
+            $('.ul .current').siblings('li').css('color', 'blue');
+            $('.ul li').eq(1).css('color', 'red');
+        })
+    </script>
+</body>
+
+</html>

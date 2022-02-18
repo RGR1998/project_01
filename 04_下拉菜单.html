@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.min.js"></script>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav {
+            height: 20px;
+        }
+
+        .nav>li {
+            float: left;
+            width: 50px;
+            height: 20px;
+        }
+
+        .nav>li ul {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(function () {
+            // $('.nav>li').hover(function () {
+            //     $(this).children('ul').slideDown();
+            // }, function () {
+            //     $(this).children('ul').slideUp(1000, 'linear', function () {
+            //         alert(1);
+            //     });
+            // });
+            $('.nav li').hover(function () {
+                $(this).children('ul').stop().slideToggle();
+            })
+        })
+    </script>
+
+    <ul class="nav">
+        <li><a href="#">微博</a>
+            <ul>
+                <li>哈哈哈</li>
+                <li>嘿嘿嘿</li>
+                <li>呼呼呼</li>
+                <li>啦啦啦</li>
+            </ul>
+        </li>
+        <li><a href="#">微博</a>
+            <ul>
+                <li>哈哈哈</li>
+                <li>嘿嘿嘿</li>
+                <li>呼呼呼</li>
+                <li>啦啦啦</li>
+            </ul>
+        </li>
+        <li><a href="#">微博</a>
+            <ul>
+                <li>哈哈哈</li>
+                <li>嘿嘿嘿</li>
+                <li>呼呼呼</li>
+                <li>啦啦啦</li>
+            </ul>
+        </li>
+        <li><a href="#">微博</a>
+            <ul>
+                <li>哈哈哈</li>
+                <li>嘿嘿嘿</li>
+                <li>呼呼呼</li>
+                <li>啦啦啦</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
